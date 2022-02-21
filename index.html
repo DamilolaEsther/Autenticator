@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <p id="display"></p>
+        <script>
+            var eusername = prompt("Enter Username");
+            var epassword = prompt("Enter Password");
+            login(eusername, epassword);
+
+            function login(eusername, epassword) {
+                var username = "admin";
+                var password = "secret";
+
+                if (eusername == username && epassword == password) {
+                    document.getElementById("display").innerHTML = "Welcome admin!";
+                    console.log("Welcome admin!")
+                } 
+                else
+                {
+                    document.getElementById("display").innerHTML = "BAD LOGIN CREDENTIALS";
+                    console.log("BAD LOGIN CREDENTIALS")
+                }
+            }
+
+</script>
+        </body>  
+</html>
